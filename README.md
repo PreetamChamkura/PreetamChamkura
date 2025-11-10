@@ -37,10 +37,6 @@ Deep learning autoencoder for detecting network intrusions
 - 📧 chamkurapreetam@gmail.com
 - 🌐 Location: Irvine, CA
 
-## 📊 GitHub Stats
 
-![Your GitHub stats](https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=radical)
-
----
 
 💡 *Always learning, always building. Open to collaborations on cybersecurity and AI projects!*
