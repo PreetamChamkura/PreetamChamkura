@@ -2,7 +2,7 @@
 
 ## 🎓 About Me
 
-I'm a Data Science student at UC Irvine (graduating 2027) with a Computer Science background from Florida State University. I'm passionate about **cybersecurity**, **AI/ML**, and building solutions that make technology more accessible and secure.
+I'm a Data Science student at UC Irvine (graduating 2027) who transferred from Florida State University with a Computer Science background. I'm passionate about **cybersecurity**, **AI/ML**, and building solutions that make technology more accessible and secure.
 
 Currently exploring the intersection of **IoT security**, **machine learning**, and **healthcare AI**.
 
