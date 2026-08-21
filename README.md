@@ -1,42 +1,65 @@
-# Hi there, I'm Preetam Chamkura! 👋
+# Preetam Chamkura
 
-## 🎓 About Me
+CS student at UC Irvine (BS, Specialization in Intelligent Systems, June 2027), previously two years at Florida State. Currently interning at Comcast on the Billing Architecture team; last summer I was on their IoT and Embedded Security team.
 
-I'm a Data Science student at UC Irvine (graduating 2027) who transferred from Florida State University with a Computer Science background. I'm passionate about **cybersecurity**, **AI/ML**, and building solutions that make technology more accessible and secure.
+Most of my work sits at the intersection of **security and systems** — certificate infrastructure, vulnerability auditing, and lately using agent orchestration to find things static scanners miss.
 
-Currently exploring the intersection of **IoT security**, **machine learning**, and **healthcare AI**.
+---
 
-## 💼 Experience Highlights
+## Experience
 
-- **Software Engineer Intern @ Comcast** - Optimized certificate validation systems and developed cybersecurity strategies for IoT infrastructure
-- **Undergraduate Researcher @ FSU** - Created LabGenie, an AI tool improving healthcare accessibility for older adults
-- Focused on **secure distributed systems** and **AI-driven solutions**
+**Comcast — Billing Architecture** · Summer 2026
+- Drove an AI-orchestrated security audit across 4 production microservices, surfacing **51 validated vulnerabilities** including a critical IDOR (CVSS 9.4) that commercial scanners missed
+- Built a human-in-the-loop exploitability triage process that ruled out 30–50% of ~190 automated findings as false positives
+- Raised line coverage on a core Java/Spring Boot billing microservice from ~2% to ~50% across payment-flow and exception-handling paths
+- **TensorForge** — GPU tensor compiler and runtime (C++/Python, MLX/Metal)
+- Retrieval-augmented onboarding agent (Python, LangGraph) over internal docs and repos, using chunking + BM25 ranked retrieval behind a tool-calling workflow
 
-## 🔧 Technical Stack
+**Comcast — IoT and Embedded Security** · Summer 2025
+- Cut certificate validation latency **40%** across infrastructure serving millions of IoT devices with a production Python client for real-time OCSP/CRL revocation checks
+- Extended **libCertifier** (Comcast's open-source C library for x509 provisioning on constrained devices) with custom provisioning parameters and Sectigo CA support — ~100+ engineering hours saved annually
+- Authored technical documentation that cut implementation time **60%** across 5+ engineering teams
 
-**Languages:** Python • C++ • Java • R • C • SQL  
-**Cybersecurity:** OpenSSL • PKI • Cryptographic Algorithms • x509  
-**AI/ML:** TensorFlow • PyTorch • Scikit-learn  
-**Tools:** Docker • Kubernetes • AWS • Git • Jira
+---
 
-## 🚀 Featured Projects
+## Projects
 
-### 🧬 Drug-Target Binding Affinity Prediction
-Analyzing drug-protein interactions using molecular feature extraction with RDKit and BioPython
-- Exploratory data analysis on DAVIS dataset
-- Feature engineering for ML modeling
+### 🔒 Sentinel — Agentic Vulnerability Auditor *(in progress)*
+`Python` `Claude API` `AWS Fargate / SQS / DynamoDB` `Docker`
 
-### 🔒 AI-Driven Network Anomaly Detection
-Deep learning autoencoder for detecting network intrusions
-- Unsupervised learning approach
-- Optimized for reducing false positives
+Open-source security auditor that orchestrates AI sub-agents to detect web vulnerabilities and triage false positives, measured against the labeled OWASP Benchmark dataset. Built on an async, horizontally scalable pipeline — stateless API, SQS job queue, containerized Fargate workers, DynamoDB state — so request handling and long-running agent orchestration scale independently.
 
-## 📫 Let's Connect!
+### 🔍 Full-Text Search Engine
+`Python` `Information Retrieval`
 
-- 💼 [LinkedIn](https://linkedin.com/in/preetam-chamkura)
-- 📧 chamkurapreetam@gmail.com
-- 🌐 Location: Irvine, CA
+Inverted index built from scratch over **53,297 crawled documents / 1,066,353 unique tokens**, with sub-second ranked retrieval. SPIMI-style disk-flushed partial indexes, k-way merge, byte-offset seek table for O(1) lookups, tf-idf scoring with cosine normalization.
 
+### ♿ Mapping Access — Theme Park Accessibility Planner
+`JavaScript` `Node.js`
 
+Deployed accessibility prototype built with a 5-person intern team: scores rides against a guest's mobility, sensory, and medical needs and generates a routed itinerary. Presented to directors and VPs as our internship capstone.
+[Demo](https://preetamchamkura.github.io/capstone_new/) · [Repo](https://github.com/PreetamChamkura/capstone_new)
 
-💡 *Always learning, always building. Open to collaborations on cybersecurity and AI projects!*
+---
+
+## Research
+
+### 🧪 LabGenie — AHRQ-Funded LLM Research, FSU eHealth Lab
+`Python` `LLM Prompt Engineering`
+
+An LLM system generating tailored patient follow-up questions from lab results. Ran an evaluation loop with 3 board-certified physicians over de-identified EHR cases, coded their feedback in NVivo to isolate hallucination and ambiguity failure modes, and iterated prompts against them — raising clarity from 96.7% → 100% and clinical sense from 89.6% → 100%. Presented at FSU's UROP poster symposium.
+
+---
+
+## Stack
+
+**Languages:** Python · C++ · C · Java · JavaScript/TypeScript · SQL
+**Systems:** AWS (Fargate, SQS, DynamoDB) · Docker · Unix/Linux · REST APIs · async & distributed architectures
+**Security:** OpenSSL · PKI · x509 · OCSP/CRL · threat modeling
+**AI:** agentic workflows · LLM orchestration & evaluation · RAG · PyTorch
+
+---
+
+## Contact
+
+[LinkedIn](https://linkedin.com/in/preetam-chamkura) · <chamkurapreetam@gmail.com>
